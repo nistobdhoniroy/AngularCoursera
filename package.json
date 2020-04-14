@@ -1,0 +1,24 @@
+{
+  "name": "angularcoursera",
+  "version": "1.0.0",
+  "description": "This is for test",
+  "main": "ix.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nistobdhoniroy/AngularCoursera.git"
+  },
+  "author": "nistobdhoniroy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nistobdhoniroy/AngularCoursera/issues"
+  },
+  "homepage": "https://github.com/nistobdhoniroy/AngularCoursera#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
