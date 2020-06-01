@@ -23,7 +23,7 @@ export class DishdetailComponent implements OnInit {
     let id = this.route.snapshot.params['id'];
     // let id_string = id.toString()
     this.dishservice.getDish(id)
-      .then(dish => this.dish= dish);
+      .subscribe(dish => this.dish= dish);
   }
 
   goBack(): void {
