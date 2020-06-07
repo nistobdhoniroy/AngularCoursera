@@ -14,7 +14,7 @@
             <h3 *ngIf="dish">{{dish.name | uppercase}}</h3>
           </mat-card-title>
         </mat-card-header>
-        <img mat-card-image src={{dish.image}} alt={{dish.name}}>
+        <img mat-card-image src="{{BaseURL+ dish.image}}" alt={{dish.name}}>
         <mat-card-content>
           <p>{{dish.description}}
           </p>
@@ -41,7 +41,6 @@
       <br>
     </mat-list>
 
-    
     <div>
       <h3>Send us your Feedback</h3>
       <p>{{ commentForm.value | json }} {{ commentForm.status | json }}</p>
@@ -67,6 +66,7 @@
         <button type="submit" [disabled]="commentForm.invalid" mat-button class="background-primary text-floral-white">Submit</button>
       </form>
     </div>
+    
   </div>
 
   

@@ -20,6 +20,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HttpClientModule} from '@angular/common/http';
+
+import { baseURL} from './shared/baseurl';
 
 import { AppComponent } from './app.component';
 
@@ -56,6 +59,7 @@ import { LoginComponent } from './login/login.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule, 
+    HttpClientModule,
     MatSliderModule,
     MatListModule,
     MatGridListModule,
@@ -78,7 +82,8 @@ import { LoginComponent } from './login/login.component';
   providers: [
     DishService,
     PromotionService,
-    LeaderService
+    LeaderService,
+    {provide: 'BaseURL', useValue: baseURL}
   ],
   bootstrap: [AppComponent]
 })
