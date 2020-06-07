@@ -39,6 +39,12 @@
           "comment": "It's your birthday, we're gonna party!",
           "author": "25 Cent",
           "date": "2011-12-02T17:57:28.556094Z"
+        },
+        {
+          "author": "Donald trump",
+          "rating": 3,
+          "comment": "This is excellent.",
+          "date": "2020-06-07T18:46:32.802Z"
         }
       ]
     },
